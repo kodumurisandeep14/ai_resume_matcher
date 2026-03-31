@@ -1,0 +1,4 @@
+python-docx
+streamlit
+huggingface_hub
+pymupdf
