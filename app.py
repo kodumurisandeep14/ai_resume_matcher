@@ -111,7 +111,8 @@ if st.button("Analyze My Fit"):
                 
                 response = client.chat_completion(
                     messages=messages,
-                    max_tokens=800  # Increased to allow for more detailed feedback
+                    max_tokens=800,  # Increased to allow for more detailed feedback
+                    temperature=0
                 )
                 
                 # Handling response format
