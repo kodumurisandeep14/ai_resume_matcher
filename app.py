@@ -65,6 +65,41 @@ st.markdown(
         font-weight: bold;
         border-radius: 6px;
     }
+       /* Fix uploader container */
+    section[data-testid="stFileUploader"] {
+        background-color: #1e293b;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid #334155;
+    }
+
+    /* Fix label */
+    section[data-testid="stFileUploader"] label {
+        color: white !important;
+        font-weight: bold;
+    }
+
+    /* FORCE visible button */
+    section[data-testid="stFileUploader"] button {
+        background-color: #38bdf8 !important;
+        color: black !important;
+        font-weight: bold;
+        border-radius: 6px;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Remove faded effect */
+    section[data-testid="stFileUploader"] button:disabled {
+        opacity: 1 !important;
+        color: black !important;
+    }
+
+    /* Hover effect */
+    section[data-testid="stFileUploader"] button:hover {
+        background-color: #0ea5e9 !important;
+        color: black !important;
+    }
      .stButton > button 
      {
         background-color: #38bdf8;
