@@ -47,9 +47,41 @@ def extract_text(uploaded_file):
     return ""
 
 # --- 3. THE USER INTERFACE (UI) ---
-st.set_page_config(page_title="AI Resume Matcher", page_icon="📄")
-st.title("🚀 AI Resume Critiquer & Matcher")
+st.set_page_config(st.set_page_config(page_title="Smart Resume Analyzer", page_icon="🧠"))
+st.title("🚀 Smart ATS Resume Analyzer")
 st.markdown("Compare your resume against any Job Description using Open-Source AI.")
+st.markdown( 
+    """
+    <style>
+    .stApp {
+        background-color: #0f172a;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: white;
+    }
+      /* "Browse files" button */
+    section[data-testid="stFileUploader"] button {
+        background-color: #38bdf8;
+        color: black;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+     .stButton > button 
+     {
+        background-color: #38bdf8;
+        color: black;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 8px 16px;
+    }
+    {
+     .stButton > button:hover {
+        background-color: #0ea5e9;
+        color: black;
+    }
+    </style>
+    """,
+    unsafe_allow_html = True
+)
 
 col1, col2 = st.columns(2)
 with col1:
