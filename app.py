@@ -102,11 +102,8 @@ st.markdown(
     }
      .stButton > button 
      {
-        background-color: #38bdf8;
-        color: black;
-        font-weight: bold;
-        border-radius: 8px;
-        padding: 8px 16px;
+        background-color: #1e293b;
+        border: 1px solid #334155;
     }
     {
      .stButton > button:hover {
