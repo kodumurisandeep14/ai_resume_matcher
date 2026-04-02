@@ -50,69 +50,13 @@ def extract_text(uploaded_file):
 st.set_page_config(st.set_page_config(page_title="Smart Resume Analyzer", page_icon="🧠"))
 st.title("🚀 Smart ATS Resume Analyzer")
 st.markdown("Compare your resume against any Job Description using Open-Source AI.")
-st.markdown( 
+st.markdown(
     """
     <style>
-    .stApp {
-        background-color: #0f172a;
-        background: linear-gradient(to right, #1e3c72, #2a5298);
-        color: white;
-    }
-      /* "Browse files" button */
-    section[data-testid="stFileUploader"] button {
-        background-color: #38bdf8;
-        color: black;
-        font-weight: bold;
-        border-radius: 6px;
-    }
-       /* Fix uploader container */
-    section[data-testid="stFileUploader"] {
-        background-color: #1e293b;
-        padding: 15px;
-        border-radius: 10px;
-        border: 1px solid #334155;
-    }
-
-    /* Fix label */
-    section[data-testid="stFileUploader"] label {
-        color: white !important;
-        font-weight: bold;
-    }
-
-    /* FORCE visible button */
-    section[data-testid="stFileUploader"] button {
-        background-color: #38bdf8 !important;
-        color: black !important;
-        font-weight: bold;
-        border-radius: 6px;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-
-    /* Remove faded effect */
-    section[data-testid="stFileUploader"] button:disabled {
-        opacity: 1 !important;
-        color: black !important;
-    }
-
-    /* Hover effect */
-    section[data-testid="stFileUploader"] button:hover {
-        background-color: #0ea5e9 !important;
-        color: black !important;
-    }
-     .stButton > button 
-     {
-        background-color: #1e293b;
-        border: 1px solid #334155;
-    }
-    {
-     .stButton > button:hover {
-        background-color: #0ea5e9;
-        color: black;
-    }
+    ...
     </style>
     """,
-    unsafe_allow_html = True
+    unsafe_allow_html=True
 )
 
 col1, col2 = st.columns(2)
